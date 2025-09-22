@@ -9,3 +9,7 @@ app.register(transactionsRoutes, {
   // Esse register, esta "puxando" as rotas la de transactions.ts
   prefix: "transactions",
 });
+
+app.get("/", async () => {
+  return { ok: true };
+});
